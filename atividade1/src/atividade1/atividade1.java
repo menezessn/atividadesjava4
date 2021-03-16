@@ -13,22 +13,24 @@ public class atividade1 {
 	
 	numero = grava.nextInt();
 	
-	if (numero==1) {
+	switch (numero) {
+	
+	case 1:
 	
 		System.out.println("Bem vindo ao nosso sistema!");
 		
-	}
+	break;
 	
-	else if (numero==2) {
+	case 2: 
 		
 		double valor;
 		System.out.println("Digite o valor: ");
 		valor = grava.nextDouble();
 		System.out.println("10% a menos desse valor é " + (valor-(valor*0.1)));
 		
-	}
+	break;
 
-	else if (numero==3) {
+	case 3:
 		
 		System.out.println("Digite a sua idade");
 		int idade;
@@ -45,20 +47,23 @@ public class atividade1 {
 		} else {
 			System.out.println("Adulto");
 		} 
-	}
+		
+	break; 
 
-	else if (numero==4) {
+	case 4: 
 		
 		System.out.println("Você saiu do sistema");
-	} else {
-		System.out.println("Comando inválido.");
-	}
 	
+	
+	
+	default:
 		
+		System.out.println("Comando inválido");
+		
+		break;
+	
 	}
-	
-	
 
-	
+	}}
 
-}
+
