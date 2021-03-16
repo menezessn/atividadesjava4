@@ -54,6 +54,7 @@ public class atividade1 {
 		
 		System.out.println("Você saiu do sistema");
 	
+		break;
 	
 	
 	default:
